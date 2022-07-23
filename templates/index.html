@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Exploration</title>
+
+    <!--    Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <form action="{{ url_for('login_response_page') }}" method="post">
+        <h1>It's Here!</h1>
+        <label class="p-1">Name</label>
+        <input name="username" class="p-1" placeholder="name" type="text">
+        <label class="p-1">Password</label>
+        <input name="password" class="p-1" placeholder="password" type="text">
+        <button class="m-1 btn btn-dark" type="submit">Ok</button>
+    </form>
+
+</body>
+</html>
